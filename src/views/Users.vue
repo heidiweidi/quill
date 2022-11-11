@@ -12,7 +12,7 @@ import { defineComponent } from 'vue';
 import UsersTable from '@/components/users/UsersTable.vue';
 
 export default defineComponent({
-  name: 'Users',
+  name: 'Accounts',
 
   components: {
     UsersTable,
