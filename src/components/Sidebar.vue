@@ -5,8 +5,10 @@
     permanent
   >
     <v-list density="compact" nav>
-      <v-list-item prepend-icon="mdi-home-city" title="Home" value="home" href="/"></v-list-item>
-      <v-list-item prepend-icon="mdi-account-group-outline" title="Users" value="users" href="/users"></v-list-item>
+      
+        <v-list-item prepend-icon="mdi-home-city" value="home" title="home" to="/"></v-list-item>
+        <v-list-item prepend-icon="mdi-account-group-outline" value="users" title="users" to="users"></v-list-item>
+      
     </v-list>
   </v-navigation-drawer>
 

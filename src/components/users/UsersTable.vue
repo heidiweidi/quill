@@ -49,7 +49,7 @@
               <td class="dark">
                 <div class="d-flex justify-space-around">
                   <v-btn variant="flat">Delete</v-btn>
-                  <v-btn variant="flat">Edit</v-btn>
+                  <v-btn variant="flat" @click="edituser">Edit</v-btn>
                 </div>
               </td>
             </tr>
@@ -98,5 +98,18 @@ export default {
       },
     ],
   }),
+  methods: {
+      async edituser () {
+        const { valid } = await this.$refs.form.edituser()
+
+        if (valid) alert('Form is valid')
+      },
+      reset () {
+        this.$refs.form.reset()
+      },
+      resetValidation () {
+        this.$refs.form.resetValidation()
+      },
+    },
 }
 </script>
