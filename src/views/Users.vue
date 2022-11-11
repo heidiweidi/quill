@@ -1,6 +1,6 @@
 <template>
   <v-layout>
-    <UsersAdd />
+    <UsersTable />
   </v-layout>
 </template>
 
@@ -16,6 +16,7 @@ export default defineComponent({
   name: 'Users',
 
   components: {
+    UsersTable,
     UsersAdd
   },
 });

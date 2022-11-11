@@ -113,6 +113,7 @@
 
 <script>
   export default {
+    name: "UsersAdd",
     data: () => ({
       valid: true,
       firstname: '',
@@ -136,6 +137,11 @@
         v => (v && v.length <= 10) || 'Name must be less than 10 characters',
       ],
       password: '',
+      nameRules: [
+        v => !!v || 'Password did not match',
+        v => (v && v.length <= 10) || 'Please re-type password',
+      ],
+      password2: '',
       nameRules: [
         v => !!v || 'Password did not match',
         v => (v && v.length <= 10) || 'Please re-type password',
